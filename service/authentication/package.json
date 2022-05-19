@@ -1,0 +1,21 @@
+{
+  "name": "autentication-service",
+  "version": "1.0.0",
+  "description": "authentication service for handler all business logic auth",
+  "main": "server.js",
+  "author": "@firmanJS",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.3",
+    "morgan": "^1.10.0"
+  }
+}

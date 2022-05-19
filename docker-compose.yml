@@ -1,0 +1,45 @@
+version: '3'
+services:
+
+  mongodb_service:
+    image: mongo:4.4.14-focal
+    container_name: mongodb_service
+    networks:
+      kubernetes_network:
+    env_file:
+      - .env
+    volumes:
+      - mongodb_service:/data/db
+      - mongodb_service_config:/data/configdb
+    ports:
+      - ${MONGO_PORT}:${MONGO_PORT}
+
+  # Nodejs
+  authentication:
+    image: authentication
+    container_name: authentication
+    build:
+      context: .
+      dockerfile: ./authentication/Dockerfile
+    networks:
+      kubernetes_network:
+    restart: always
+    volumes:
+      - .:/usr/app/authentication
+      - /usr/app/authentication/node_modules
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+    depends_on:
+      - mongodb_service
+
+#Docker Networks
+networks:
+  kubernetes_network:
+    driver: bridge
+
+#Volumes
+volumes:
+  mongodb_service:
+    driver: local
+  mongodb_service_config:
+    driver: local
