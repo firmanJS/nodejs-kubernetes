@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu May 19 17:32:44 2022
+# Make data base, printed on Fri May 20 07:04:27 2022
 
 # Variables
 
@@ -25,7 +25,7 @@ SNAP_INSTANCE_KEY =
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f0370aae-bea1-4ff1-80bb-53d249eb1298.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d16404ee-06a9-46dd-9bb5-6d1ccfafd632.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
@@ -107,7 +107,7 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 7930
+VSCODE_PID = 4655
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -115,7 +115,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/fimz:@/tmp/.ICE-unix/1999,unix/fimz:/tmp/.ICE-unix/1999
+SESSION_MANAGER = local/fimz:@/tmp/.ICE-unix/1971,unix/fimz:/tmp/.ICE-unix/1971
 # automatic
 *F = $(notdir $*)
 # environment
@@ -140,12 +140,12 @@ XMODIFIERS = @im=ibus
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
 SHLVL = 0
+ 
 # environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
- 
 SNAP_COOKIE = MpGy1Vh2p16tHt16F7mNNrXXC76gttc942XVTBmlphwH
 # environment
 PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/usr/local/go/bin:/usr/local/go/bin
@@ -164,7 +164,7 @@ LC_TIME = en_US.UTF-8
 # environment
 SNAP = /snap/code/97
 # environment
-INVOCATION_ID = 7566f44bbf7d403aad58e64e025f589e
+INVOCATION_ID = 9a784cb9694242319cc0c39077178d4a
 # environment
 SNAP_REVISION = 97
 # environment
@@ -196,7 +196,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 2016
+SYSTEMD_EXEC_PID = 1990
 # environment
 DISPLAY = :1
 # environment
@@ -214,11 +214,11 @@ SNAP_DATA = /var/snap/code/97
 # environment
 SNAP_CONTEXT = MpGy1Vh2p16tHt16F7mNNrXXC76gttc942XVTBmlphwH
 # environment
-MANAGERPID = 1804
+MANAGERPID = 1777
 # environment
 LC_MEASUREMENT = en_US.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 7891
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4611
 # environment
 _ = /snap/code/97/usr/share/code/code
 # environment
@@ -230,7 +230,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/firman/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:34872
+JOURNAL_STREAM = 8:34058
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -307,6 +307,7 @@ Makefile:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 
 # Not a target:
@@ -314,7 +315,6 @@ all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
- 
 #  File has not been updated.
 
 # files hash-table stats:
@@ -331,6 +331,6 @@ all:
 # strcache performance: lookups = 20 / hit rate = 20%
 # hash-table stats:
 # Load=16/8192=0%, Rehash=0, Collisions=0/20=0%
-# Finished Make data base on Thu May 19 17:32:44 2022
+# Finished Make data base on Fri May 20 07:04:27 2022
 
  
