@@ -41,7 +41,7 @@ make docker-seed
 
 ### Deploy Application
 ```bash
-kubectl apply -f deployments
+kubectl apply -f deployment
 ```
 
 ### Users dummy
