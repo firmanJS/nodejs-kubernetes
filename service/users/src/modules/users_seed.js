@@ -21,8 +21,10 @@ function seed() {
   connectToMongo()
   Users.create([payloadAdmin, payloadUser]).then(result => {
     console.log(result);
+    process.exit(1)
   }).catch(err => {
     console.log(err);
+    process.exit(1)
   })
 }
 

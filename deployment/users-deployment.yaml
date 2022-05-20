@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.1 (a9d05d509)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: users
+  name: users
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: users
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.26.1 (a9d05d509)
+      creationTimestamp: null
+      labels:
+        io.kompose.network/kubernetes_network: "true"
+        io.kompose.service: users
+    spec:
+      containers:
+        - image: users
+          name: users
+          ports:
+            - containerPort: 3001
+          resources: {}
+          volumeMounts:
+            - mountPath: /usr/apps/users
+              name: users-claim0
+            - mountPath: /usr/apps/users/node_modules
+              name: users-claim1
+      restartPolicy: Always
+      volumes:
+        - name: users-claim0
+          persistentVolumeClaim:
+            claimName: users-claim0
+        - name: users-claim1
+          persistentVolumeClaim:
+            claimName: users-claim1
+status: {}

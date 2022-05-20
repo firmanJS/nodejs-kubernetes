@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri May 20 07:04:27 2022
+# Make data base, printed on Fri May 20 16:42:46 2022
 
 # Variables
 
@@ -25,7 +25,7 @@ SNAP_INSTANCE_KEY =
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d16404ee-06a9-46dd-9bb5-6d1ccfafd632.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-1fa6f825-3190-4599-b7b4-83dc88c47e4b.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
@@ -140,7 +140,6 @@ XMODIFIERS = @im=ibus
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
 SHLVL = 0
- 
 # environment
 MAKELEVEL := 0
 # default
@@ -194,7 +193,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.deskto
 # environment
 SNAP_ARCH = amd64
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := docker-start
 # environment
 SYSTEMD_EXEC_PID = 1990
 # environment
@@ -278,17 +277,18 @@ LC_IDENTIFICATION = en_US.UTF-8
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=132/1024=13%, Rehash=0, Collisions=6/161=4%
+# Load=132/1024=13%, Rehash=0, Collisions=6/162=4%
 
 # Pattern-specific Variable Values
+ 
 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (device 2053, inode 2984476): 11 files, no impossibilities.
+# . (device 2053, inode 2984476): 13 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -299,15 +299,21 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-16 16:20:04.024838634
+#  Last modified 2022-05-20 07:44:44.046556999
 #  File has been updated.
 #  Successfully updated.
+
+docker-start:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	docker-compose up -d
 
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 
 # Not a target:
@@ -317,20 +323,42 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
+docker-down:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+ 
+	docker-compose down
+
+docker-build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 4):
+	docker-compose up --build
+
+docker-stop:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 6):
+	docker-compose stop
+
 # files hash-table stats:
-# Load=4/1024=0%, Rehash=0, Collisions=0/14=0%
+# Load=8/1024=1%, Rehash=0, Collisions=0/18=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 155 B / avg = 9 B
-# current buf: size = 8162 B / used = 155 B / count = 16 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 261 B / avg = 11 B
+# current buf: size = 8162 B / used = 261 B / count = 22 / avg = 11 B
 
-# strcache performance: lookups = 20 / hit rate = 20%
+# strcache performance: lookups = 30 / hit rate = 26%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=0/20=0%
-# Finished Make data base on Fri May 20 07:04:27 2022
+# Load=22/8192=0%, Rehash=0, Collisions=0/30=0%
+# Finished Make data base on Fri May 20 16:42:46 2022
 
  

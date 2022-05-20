@@ -34,4 +34,25 @@ make docker-down
 
 # stop application and others service
 make docker-stop
+
+# run seed
+make docker-seed
+```
+
+### Deploy Application
+```bash
+kubectl apply -f deployments
+```
+
+### Users dummy
+
+```bash
+
+Admin 
+username :admin
+password: admin
+
+User
+username :user
+password: user
 ```
