@@ -1,5 +1,5 @@
-# Zurich api
-Zurich api using nodejs version `16.x`.
+# Express api
+Express api using nodejs version `16.x`.
 
 ## Getting started
 - **Clone This Repository Using HTTPS** 
