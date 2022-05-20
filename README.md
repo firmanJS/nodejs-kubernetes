@@ -7,6 +7,10 @@ Express api using nodejs version `16.x`.
 git clone https://github.com/firmanJS/nodejs-kubernetes.git
 cd existing_repo
 ```
+
+## DIAGRAM
+![diagram](https://github.com/firmanJS/nodejs-kubernetes/blob/main/diagram.png)
+
 ### Run Application
 running application three methods manually, using docker or via Makefile
 * Manually :
